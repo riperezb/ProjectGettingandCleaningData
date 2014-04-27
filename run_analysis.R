@@ -48,3 +48,4 @@ dataMelt <- melt(data=tidyData, id=c("subject", "activity"))
 dataMean <- dcast(dataMelt, subject + activity ~ variable, mean)
 
 tidyData
+dataMean
