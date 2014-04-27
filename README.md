@@ -8,6 +8,7 @@ There is just one script:
   
 
 The steps of this script are as follows:
+
 1.  Read features vector, the names of the test and training columns
 2.  Read test and training dataset
 3.  Assign names to the datasets
