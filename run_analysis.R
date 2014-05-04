@@ -44,6 +44,7 @@ names(subject) <- "subject"
 tidyData <- cbind(subject, activity, extractedData)
 
 ##  5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+library(reshape2)
 dataMelt <- melt(data=tidyData, id=c("subject", "activity"))
 dataMean <- dcast(dataMelt, subject + activity ~ variable, mean)
 
